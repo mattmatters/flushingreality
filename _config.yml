@@ -4,7 +4,7 @@ email: domattthings@gmail.com
 description: All about video game bathrooms
 # baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://flushingreality.com" # the base hostname & protocol for your site
-google_analytics: "UA-XXXXXXXX-X"
+google_analytics: "UA-110856410-11"
 
 authors:
   matt:
