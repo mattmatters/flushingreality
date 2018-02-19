@@ -15,7 +15,7 @@ layout: main
                 {% if post.image %}
                     <div class="cover">
                         {% include new-post-tag.html date=post.date %}
-                        <a href="{{ post.url | prepend: site.baseurl }}" {%if isnewpost %}class="new-post"{% endif %}>
+                        <a href="{{ post.url | prepend: site.baseurl }}" {%if isnewpost %}class="new-post"{% endif %}index.html>
                             <img src="assets/img/placeholder.png" data-url="{{ post.image }}" class="preload">
                         </a>
                     </div>
@@ -25,12 +25,12 @@ layout: main
                     <time itemprop="datePublished" datetime="{{ post.date | date_to_xmlschema }}" class="date">
                         {% include date.html date=post.date %}
                     </time>
-                    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+                    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}index.html">
                         <h2 class="post-title" itemprop="name">
                             {{ post.title }}
                         </h2>
                     </a>
-                    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+                    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}index.html">
                         <p class="description">{{ post.introduction }}</p>
                     </a>
                     <div class="tags">
