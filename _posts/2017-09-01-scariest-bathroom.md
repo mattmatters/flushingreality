@@ -5,7 +5,7 @@ date: 2017-09-13 12:26:40
 image: '/assets/img/mafiaiii.gif'
 description: Mafia III easily has the scariest mirror
 category: 'mirrors'
-author: matt
+author: Matt Lewis
 tags:
 - Mafia III
 - mirrors
