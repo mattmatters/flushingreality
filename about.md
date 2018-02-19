@@ -11,3 +11,4 @@ permalink: /about/
 
 Flushing Reality is founded by a bunch of assholes that are very serious about toilets.
 
+{% include team.html %}

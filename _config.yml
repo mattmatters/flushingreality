@@ -7,16 +7,26 @@ url: "https://flushingreality.com" # the base hostname & protocol for your site
 google_analytics: "UA-110856410-11"
 
 authors:
-  matt:
-    name: Matt Lewis
+  - name: Matt Lewis
+    Position: Cofounder, Web Stuff, & Systems Administrator
+    description: Matt likes video games, but usually never has time to play them. He's usually found at the local bar.
+    image: /assets/img/matt.jpg
+    homepage: http://mattmatters.io
     github: mattmatters
-  chelby:
-    name: Chelby Sharpe
-  tyler:
-    name: Tyler Cifelli
+    twitter: dancinpolkabear
+  - name: Tyler Cifelli
+    Position: Cofounder, web stuff, and graphic design
+    description: Tyler has a degree in game design and is actively involved in the scene.  He's probably the only one actually qualified on the site.
+    github: tylercifelli
+    image: /assets/img/tyler.jpg
+  - name: Chelby Sharpe
+    Position: Cofounder & Writer
+    description: Chelby claims to like video games, we are still waiting on proof though
+    image: /assets/img/chelby.jpg
+    twitter: wolfychaaan
 
 # User Settings
-username: Flushing Reality
+username: Guy
 user_description: Some text about you.
 disqus_username: disqus_username
 
@@ -26,8 +36,8 @@ github_username: github_username
 facebook_username: facebook_username
 twitter_username: twitter_username
 instagram_username: instagram_username
-linkedin_username: linkedin_username
-medium_username: medium_username
+# linkedin_username: linkedin_username
+# medium_username: medium_username
 
 # Build settings
 markdown: kramdown
