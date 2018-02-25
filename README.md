@@ -1,4 +1,5 @@
 # Flushing Reality
+[![Build Status](https://travis-ci.org/mattmatters/flushingreality.svg?branch=master)](https://travis-ci.org/mattmatters/flushingreality)
 
 A video game site soley based around bathrooms.
 
