@@ -1,6 +1,6 @@
 language: ruby
 install:
-  - gem install jekyll
+  - bundle install
 script: jekyll build
 deploy:
   on:
