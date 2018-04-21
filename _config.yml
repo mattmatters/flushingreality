@@ -1,16 +1,18 @@
 # Site Settings
 title: Flushing Reality
 email: domattthings@gmail.com
-description: All about video game bathrooms
+description: A revolutionary video game site all about bathrooms in video games. Also dabbling with toilets and mirrors.
+found_date: "2017-09-10 12:26:40"
+location: "United States"
 # baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://flushingreality.com" # the base hostname & protocol for your site
 google_analytics: "UA-110856410-11"
-
+logo: "https://flushingreality.com/assets/img/logo.png"
 authors:
   - name: Matt Lewis
     Position: Cofounder, Web Stuff, & Systems Administrator
     description: Matt likes video games, but usually never has time to play them. He's usually found at the local bar.
-    image: /assets/img/matt.jpg
+    image: https://flushingreality.com/assets/img/matt.jpg
     homepage: https://mattmatters.io
     github: mattmatters
     twitter: dancinpolkabear
@@ -18,11 +20,11 @@ authors:
     Position: Cofounder, web stuff, and graphic design
     description: Tyler has a degree in game design and is actively involved in the scene.  He's probably the only one actually qualified on the site.
     github: tylercifelli
-    image: /assets/img/tyler.jpg
+    image: https://flushingreality.com/assets/img/tyler.jpg
   - name: Chelby Sharpe
     Position: Cofounder & Writer
     description: Chelby claims to like video games, we are still waiting on proof though
-    image: /assets/img/chelby.jpg
+    image: https://flushingreality.com/assets/img/chelby.jpg
     twitter: wolfychaaan
 
 # User Settings

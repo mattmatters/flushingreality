@@ -1,0 +1,26 @@
+{
+  "@type": "Person",
+  {% if author.homepage %}
+  "url": "{{ author.homepage }}",
+  "sameAs": [
+    {% if author.linkedin %}
+      "https://www.linkedin.com/in/{{ author.linkedin }}",
+    {% endif %}
+    {% if author.github %}
+      "https://github.com/{{ author.github }}",
+    {% endif %}
+    {% if author.twitter %}
+      "https://twitter.com/{{ author.twitter }}"
+    {% endif %}
+  ],
+  {% endif %}
+  {% if author.image %}
+  "image": {
+    "@type": "ImageObject",
+    "url": "{{ author.image }}"
+  },
+  {% endif %}
+  "name": "{{ author.name }}",
+  "description": "{{ author.description }}",
+  "jobTitle": "{{ author.position }}"
+}
