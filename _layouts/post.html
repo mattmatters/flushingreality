@@ -44,11 +44,17 @@
                 <div class="details" itemscope itemtype="http://schema.org/Person">
                     <img itemprop="image" class="img-rounded" src="{{ author.image }}">
                     <p class="def">Author</p>
-                    <h3 class="name">{{ author.name }}</h3>
-                    <p class="desc">{{ author.description }}</p>
+                    <h3 itemprop="name" class="name">{{ author.name }}</h3>
+                    <p itemprop="jobTitle" class="def">{{ author.Position }}</p>
+                    <p itemprop="description" class="desc">{{ author.description }}</p>
                     <p>
+                        {% if author.homepage %}
+                        <a itemprop="brand" href="{{ author.homepage }}" title="Home">
+                            <svg><use xlink:href="#icon-google-plus"></use></svg>
+                        </a>
+                        {% endif %}
                         {% if author.github %}
-                        <a itemprop="github" href="https://github.com/{{ author.github }}" title="Github">
+                        <a itemprop="memberOf" href="https://github.com/{{ author.github }}" title="Github">
                             <svg><use xlink:href="#icon-github"></use></svg>
                         </a>
                         {% endif %}
@@ -58,7 +64,7 @@
                         </a>
                         {% endif %}
                         {% if author.twitter %}
-                        <a itemprop="twitter" href="https://twitter.com/{{ author.twitter }}" title="Twitter">
+                        <a itemprop="contactPoint" href="https://twitter.com/{{ author.twitter }}" title="Twitter">
                             <svg><use xlink:href="#icon-twitter"></use></svg>
                         </a>
                         {% endif %}
