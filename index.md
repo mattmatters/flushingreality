@@ -15,7 +15,7 @@ layout: main
                 {% if post.image %}
                     <div class="cover">
                         {% include new-post-tag.html date=post.date %}
-                        <a href="{{ post.url | prepend: site.baseurl }}" {%if isnewpost %}class="new-post"{% endif %}index.html>
+                        <a href="{{ post.url | prepend: site.baseurl }}" {%if isnewpost %}class="new-post"{% endif %} index.html>
                             <img src="assets/img/placeholder.png" data-url="{{ post.image }}" class="preload">
                         </a>
                     </div>
