@@ -5,11 +5,10 @@
         {% include minutes-to-read.html %}
         {% include svg-icons.html %}
         {% include header.html %}
-        {% include article-meta.html %}
         <section class="post">
 
             <article role="article" id="post" class="post-content" itemprop="articleBody">
-                <p itemprop="post-info" class="post-info">
+                <p class="post-info">
                     {% if page.date %}
                         <svg id="date" class="icon-calendar"><use xlink:href="#icon-calendar"></use></svg>
                         <time itemprop="datePublished" datetime="{{ page.date | date_to_xmlschema }}" class="date">
