@@ -28,26 +28,28 @@ gulp.task('jekyll-build', function (done) {
 /**
  * Rebuild Jekyll & do page reload
  */
-gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
+gulp.task('jekyll-rebuild', gulp.series('jekyll-build', function (done) {
   browserSync.reload();
-});
+  done();
+}));
 
 /**
  * Wait for jekyll-build, then launch the Server
  */
-gulp.task('browser-sync', ['jekyll-build'], function() {
+gulp.task('browser-sync', gulp.series('jekyll-build', function(done) {
   browserSync({
     server: {
       baseDir: '_site'
     }
   });
-});
+  done();
+}));
 
 /**
  * Stylus task
  */
-gulp.task('stylus', function(){
-    gulp.src('src/styl/main.styl')
+gulp.task('stylus', function(done){
+  gulp.src('src/styl/main.styl')
     .pipe(plumber())
     .pipe(stylus({
       use:[koutoSwiss(), prefixer(), jeet(), rupture()],
@@ -56,6 +58,7 @@ gulp.task('stylus', function(){
     .pipe(gulp.dest('_site/assets/css/'))
     .pipe(browserSync.reload({stream:true}))
     .pipe(gulp.dest('assets/css'));
+  done();
 });
 
 /**
@@ -93,6 +96,6 @@ gulp.task('watch', function () {
  * Default task, running just `gulp` will compile the stylus,
  * compile the jekyll site, launch BrowserSync & watch files.
  */
-gulp.task('default', ['js', 'stylus', 'browser-sync', 'watch']);
+gulp.task('default', gulp.series('js', 'stylus', 'browser-sync', 'watch'));
 
-gulp.task('build', ['js', 'stylus', 'imagemin', 'jekyll-build']);
+gulp.task('build', gulp.series('js', 'stylus', 'imagemin', 'jekyll-build'));
