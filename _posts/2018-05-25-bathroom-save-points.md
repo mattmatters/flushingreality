@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Saving State with Bathrooms"
-date: 2018-04-21 12:26:40
+date: 2018-05-25 12:26:40
 image: '/assets/img/dr_bathroom.jpg'
 description: 'With no new Dead Rising games on the horizon, we reflect on the profound impact of saving games in a bathroom.'
 category: 'gameplay'
