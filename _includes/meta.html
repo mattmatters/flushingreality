@@ -1,7 +1,7 @@
 <!-- Social: Google+ / Schema.org  -->
 <meta itemprop="name" content="{% if page.title %}{{ page.title }} | {{ site.username }}{% else %}{{ site.title }}{% endif %}"/>
 <meta itemprop="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-<meta itemprop="image" content="{{ "/assets/img/blog-image.png" | prepend: site.baseurl | prepend: site.url }}"/>
+<meta itemprop="image" content="{{ "/assets/img/toilet.jpg" | prepend: site.baseurl | prepend: site.url }}"/>
 
 <!-- Social: Twitter -->
 <meta name="twitter:card" content="summary_large_image">
@@ -11,7 +11,7 @@
 {% if page.image %}
 <meta property="twitter:image:src" content="{{ page.image }}">
 {% else %}
-<meta property="twitter:image:src" content="{{ "/assets/img/blog-image.png" | prepend: site.baseurl | prepend: site.url }}">
+<meta property="twitter:image:src" content="{{ "/assets/img/toilet.jpg" | prepend: site.baseurl | prepend: site.url }}">
 {% endif %}
 
 <!-- Social: Facebook / Open Graph -->
@@ -20,7 +20,7 @@
 {% if page.image %}
 <meta property="og:image" content="{{ page.image }}">
 {% else %}
-<meta property="og:image" content="{{ "/assets/img/blog-image.png" | prepend: site.baseurl | prepend: site.url }}">
+<meta property="og:image" content="{{ "/assets/img/toilet.jpg" | prepend: site.baseurl | prepend: site.url }}">
 {% endif %}
 <meta property="og:description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 <meta property="og:site_name" content="{{ site.title }}">
